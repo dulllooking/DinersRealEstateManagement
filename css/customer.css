@@ -1,0 +1,323 @@
+.progress {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9rem;
+    counter-reset: step;
+    height: auto;
+    background-color: transparent;
+}
+
+.progress li {
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+}
+
+.progress li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progress li:first-child:after {
+    content: none;
+}
+
+.progress li.active {
+    color: green;
+}
+
+.progress li.active:before {
+    border-color: green;
+}
+
+.progress li.active + li.active:after {
+    background-color: green;
+}
+
+
+ul {
+	list-style: none;
+}
+
+object{
+	width: 100%;
+}
+
+input[type=checkbox] {
+	transform: scale(1.35);
+    border: 1px solid #900000;
+}
+
+pre {
+    font-size: 1.2em;
+    resize: none;
+    max-height: 200px;
+    white-space: pre-wrap;
+    display: block;
+    overflow: auto;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.copyrights {
+	border-top: #dc5834 1px solid;
+	padding-top: 1rem;
+	font-family: "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.basicDataForm {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#banner {
+	background: url("/assets/img/banner.jpeg");
+    background-size: cover;
+}
+
+@media (max-width: 575.98px) {
+    .logo{
+      max-width: 200px;
+    }
+}
+
+@media (min-width: 280px) {
+  header.masthead {
+      height: 20vh;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+      width: 100%;
+  }
+}
+@media (min-width: 400px) {
+    header.masthead {
+        height: 20vh;
+    }
+}
+@media (min-width: 520px) {
+  body header.masthead {
+    height: 25vh;
+  }
+}
+@media (min-width: 640px) {
+  body header.masthead {
+    height: 25vh;
+  }
+}
+@media (min-width: 960px) {
+  body header.masthead {
+    height:38vh;
+  }
+}
+@media (min-width: 1160px) {
+  body header.masthead {
+    height: 75vh;
+  }
+}
+@media (min-width: 1360px) {
+    body header.masthead {
+      height: 65vh;
+    }
+}
+@media (min-width: 1440px) {
+  body header.masthead {
+    height: 75vh;
+  }
+}
+@media (min-width: 1660px) {
+    body header.masthead {
+      height: 65vh;
+    }
+}
+@media (min-width: 2360px) {
+    body header.masthead {
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+
+@media (min-width: 760px) {
+  .page-section {
+    min-height: 20rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+@media (min-width: 990px) {
+    .page-section {
+      min-height: 25rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+}
+@media (min-width: 1020px) {
+  .page-section {
+    min-height: 30rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+@media (min-width: 1360px) {
+  .page-section {
+    min-height: 35rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+@media (min-width: 1660px) {
+  .page-section {
+    min-height: 45rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+@media (min-width: 2360px) {
+  .page-section {
+    min-height: 70rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+    .page-section {
+      min-height: 15rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+}
+@media (max-width: 514.98px) {
+  .page-section {
+    min-height: 13rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+
+@media (max-width: 414.98px) {
+  .page-section {
+    min-height: 11rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  #portfolio{
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 364.98px) {
+  .page-section {
+    min-height: 10rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  #portfolio{
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 334.98px) {
+  .page-section {
+    min-height: 9rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  #portfolio{
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 314.98px) {
+  .page-section {
+    min-height: 8rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  #portfolio{
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 264.98px) {
+  .page-section {
+    min-height: 7rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  #portfolio{
+    margin-top: 0rem;
+  }
+}

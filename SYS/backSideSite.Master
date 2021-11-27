@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="backSideSite.master.cs" Inherits="DinersRealEstateManagement.SYS.backSideSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>大來不動產後台管理系統</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/ruang-admin.min.css" rel="stylesheet"/>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page-top">
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+                <li class="nav-item">
+                    <a class="nav-link d-flex" href="clientAccountList.aspx">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <h6 class="font-weight-bold text-primary">會員註冊列表</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex" href="newsManag.aspx">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <h6 class="font-weight-bold text-primary">最新消息管理</h6></a>
+                </li>
+                <li class="nav-item">
+                    <hr class="sidebar-divider">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex" href="SignOut.ashx">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <h6 class="font-weight-bold">登出</h6></a>
+                </li>
+                <li class="nav-item">
+                    <hr class="sidebar-divider">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex" href="serviceManag.aspx">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <h6 class="font-weight-bold text-primary">資料服務區域管理</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex" href="sysInfo.aspx">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <h6 class="font-weight-bold text-success">公司資訊管理</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex" href="backSideAccount.aspx">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <h6 class="font-weight-bold text-danger">後台帳號管理</h6></a>
+                </li>
+            </ul>
+            <div id="content-wrapper" class="d-flex flex-column">
+                <div id="content">
+                    <div class="container-fluid" id="container-wrapper">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/ruang-admin.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+</body>
+</html>

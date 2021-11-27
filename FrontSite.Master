@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontSite.master.cs" Inherits="DinersRealEstateManagement.FrontSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>大來不動產</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css?20210930" rel="stylesheet" />
+    <link href="css/customer.css?20210930" rel="stylesheet" />
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Content-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page-top">
+    <form id="form1" runat="server">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.aspx"><img src="assets/logo-6-re.png" alt="logo" class="logo"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.aspx">公司介紹</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news_list.aspx">最新消息</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.aspx">資料服務區域</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sign_up.aspx">註冊</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.dalai168.com.tw/system/Land_view/" target="_blank">登入</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Content-->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <ul>
+                            <li>
+                                <i class="bi bi-caret-right"><a href="contract.aspx?id=1" >會員條款</a></i>
+                            </li>
+                            <li>
+                                <i class="bi bi-caret-right"><a href="contract.aspx?id=2" >會員服務契約</a></i>
+                            </li>
+                            <li>
+                                <i class="bi bi-caret-right"><a href="contract.aspx?id=3" >個人資料保護與隱私權政策</a></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h4 id="companyName" runat="server">大來不動產行銷顧問有限公司</h4>
+                        <ul>
+                            <li>
+                                <span>服務時間：<span id="serviceTime" runat="server">09:00~12:00、13:30~18:00</span></span>
+                            </li>
+                            <li>
+                                <span>地址：
+                                    <a id="addressLink" runat="server" href="https://www.google.com.tw/maps/search/">700 台南市中西區大埔街63號</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>電話：
+                                    <a id="phoneLink" runat="server" href="tel:(06)-213-1066">(06) 213 - 1066</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>傳真：
+                                    <a id="faxLink" runat="server" href="fax:(06) 214 - 8522">(06) 214 - 8522</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>郵件：
+                                    <a id="emailLink" runat="server" href="mailto:#####@gmail.com">d120121406@gmail.com</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="small text-center text-muted">
+                            <div class="copyrights">COPYRIGHT © <span class="year"></span> 大來不動產行銷顧問有限公司</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            let currentYear = new Date().getFullYear()
+            const copyright = document.querySelector(".year");
+            copyright.innerHTML = currentYear
+        </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Content-->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
